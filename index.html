@@ -4,39 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="text" placeholder="Search city..." required /><input
-          type="submit"
-          value="Search"
-        />
-      </form>
-    </header>
-    <main>
-      <h1>London, United Kingdom</h1>
-      <div>Saturday, 09:53</div>
-      <p>☀️ 7°C</p>
-      <div>Sunny</div>
-      <div>Precipitation: 8%</div>
-      <div>Wind speed: 5 mph</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/emiliastx" target="_blank"
-        >Emilia de St Croix</a
-      >
-      and is
-      <a
-        href="https://github.com/emiliastx/Weather-Project-Week7"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="hhttps://emilia-weather-page.netlify.app/" target="_blank"
-        >hosted on Netlify.</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="text"
+            placeholder="Search city..."
+            required
+            class="search-form-input"
+          /><input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <h1>London, United Kingdom</h1>
+          <div class="current-date-time">Saturday, 09:53</div>
+          <p class="current-temp">☀️ 7°C</p>
+          <div class="current-weather-type">Sunny</div>
+          <div class="current-precipitation">
+            Precipitation: <strong>8%</strong>
+          </div>
+          <div class="current-wind">Wind speed: <strong>5mph</strong></div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/emiliastx" target="_blank"
+          >Emilia de St Croix</a
+        >
+        and is
+        <a
+          href="https://github.com/emiliastx/Weather-Project-Week7"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="hhttps://emilia-weather-page.netlify.app/" target="_blank"
+          >hosted on Netlify.</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
