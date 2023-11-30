@@ -53,8 +53,9 @@ h1 {
   color: rgb(127, 36, 139);
 }
 .current-temp {
-  font-size: 40px;
+  font-size: 50px;
   color: rgb(107, 27, 117);
+  font-weight: 600;
 }
 .current-weather-type,
 .current-precipitation,

@@ -9,18 +9,19 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="text"
             placeholder="Search city..."
             required
             class="search-form-input"
+            id="search-form-input"
           /><input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
-          <h1>London, United Kingdom</h1>
+          <h1 id="current-city">London, United Kingdom</h1>
           <div class="current-date-time">Saturday, 09:53</div>
           <p class="current-temp">☀️ 7°C</p>
           <div class="current-weather-type">Sunny</div>
@@ -47,5 +48,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
