@@ -58,7 +58,7 @@ h1 {
   font-weight: 600;
 }
 .current-weather-type,
-.current-precipitation,
+.current-humidity,
 .current-wind {
   color: rgb(143, 78, 151);
   font-size: 18px;
