@@ -7,15 +7,20 @@ function updateWeather(response) {
   let currentWindElement = document.querySelector("#current-wind");
   let currentTimeElement = document.querySelector("#current-time");
   let date = new Date(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
 
   console.log(response.data);
 
-  currentCityElement.innerHTML = response.data.name;
+  currentCityElement.innerHTML = `${response.data.name}, ${response.data.sys.country}`;
   temperatureElement.innerHTML = Math.round(temperature);
   currentWeatherElement.innerHTML = response.data.weather[0].main;
   currentHumidityElement.innerHTML = response.data.main.humidity;
   currentWindElement.innerHTML = response.data.wind.speed;
   currentTimeElement.innerHTML = formatDate(date);
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function formatDate(date) {
