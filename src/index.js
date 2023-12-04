@@ -11,7 +11,7 @@ function updateWeather(response) {
 
   console.log(response.data);
 
-  currentCityElement.innerHTML = `${response.data.name}, ${response.data.sys.country}`;
+  currentCityElement.innerHTML = `${response.data.name}`;
   temperatureElement.innerHTML = Math.round(temperature);
   currentWeatherElement.innerHTML = response.data.weather[0].main;
   currentHumidityElement.innerHTML = response.data.main.humidity;
