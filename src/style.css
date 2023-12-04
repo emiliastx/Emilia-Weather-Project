@@ -71,6 +71,29 @@ img {
 .weather-app-data strong {
   color: rgb(184, 88, 145);
 }
+
+.column {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+  color: rgb(127, 36, 139);
+  font-weight: bolder;
+}
+
+.weather-forecast-temperature {
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(127, 36, 139);
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.8;
+}
+
 footer {
   border-top: 1px solid rgb(206, 148, 183);
   padding-top: 10px;
