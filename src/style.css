@@ -71,7 +71,10 @@ img {
 .weather-app-data strong {
   color: rgb(184, 88, 145);
 }
-
+.weather-forecast {
+  display: flex;
+  justify-content: center;
+}
 .column {
   justify-content: center;
   display: flex;
