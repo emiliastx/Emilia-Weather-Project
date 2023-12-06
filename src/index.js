@@ -9,8 +9,6 @@ function updateWeather(response) {
   let date = new Date(response.data.dt * 1000);
   let iconElement = document.querySelector("#icon");
 
-  console.log(response.data);
-
   currentCityElement.innerHTML = `${response.data.name}`;
   temperatureElement.innerHTML = Math.round(temperature);
   currentWeatherElement.innerHTML = response.data.weather[0].main;
@@ -21,6 +19,7 @@ function updateWeather(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -59,8 +58,17 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", controlSearchSubmit);
 
 searchCity("London");
+///forecast///
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "62231151ce343c4d68652e1617efc22f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=London&appid=62231151ce343c4d68652e1617efc22f&units=metric`;
+  axios(apiUrl).then(displayForecast);
+
+  console.log(apiUrl);
+}
+
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -87,5 +95,5 @@ function displayForecast() {
 `;
   });
   forecastElement.innerHTML = forecastHtml;
+  console.log(response);
 }
-displayForecast();
