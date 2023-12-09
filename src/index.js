@@ -71,29 +71,31 @@ function getForecast(city) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
 
-  days.forEach(function (day) {
+  response.data.list.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `
   <div class="row">
     <div class="col-2 column">
-      <div class="weather-forecast-date">${day}</div>
+      <div class="weather-forecast-date">Tue</div>
       <img
-        src="https://openweathermap.org/img/wn/04d@2x.png"
-        alt="day-one-icon"
+        src="${day.weather.icon}"
         width="70px"
       />
       <div class="weather-forecast-temperature">
-        <span class="weather-forecast-temperature-max">12°</span>
-        <span class="weather-forecast-temperature-min">3°</span>
+        <span class="weather-forecast-temperature-max">${Math.round(
+          day.main.temp_max
+        )}°</span>
+        <span class="weather-forecast-temperature-min">${Math.round(
+          day.main.temp_min
+        )}°</span>
       </div>
     </div>
   </div>
 `;
   });
   forecastElement.innerHTML = forecastHtml;
-  console.log(response);
+  console.log(response.data.list[7].weather);
 }
