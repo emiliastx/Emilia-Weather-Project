@@ -1,13 +1,13 @@
 body {
-  background-color: rgb(247, 237, 243);
+  background-color: rgb(220, 234, 252);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .weather-app {
-  background-color: rgb(235, 198, 240);
+  background-color: rgb(139, 179, 233);
   max-width: 700px;
   margin: 50px auto;
   border-radius: 20px;
-  box-shadow: 0 30px 50px rgba(80, 50, 100, 0.7);
+  box-shadow: 0 30px 50px rgba(36, 49, 133, 0.6);
   padding: 20px;
 }
 .search-form-input {
@@ -20,7 +20,7 @@ body {
 }
 
 .search-form-button {
-  background-color: rgb(206, 148, 183);
+  background-color: rgb(55, 122, 209);
   border: none;
   border-radius: 6px;
   padding: 12px 20px;
@@ -29,7 +29,7 @@ body {
   font-size: 14px;
 }
 .search-form-button:hover {
-  background-color: rgb(238, 173, 212);
+  background-color: rgb(22, 78, 151);
   transition: ease-in-out;
   cursor: pointer;
 }
@@ -45,12 +45,13 @@ h1,
 }
 h1 {
   margin-block-end: 10px;
-  color: rgb(107, 27, 117);
+  color: rgb(8, 54, 114);
   font-size: 35px;
 }
 .current-date-time {
   font-size: 25px;
-  color: rgb(127, 36, 139);
+  color: rgb(19, 71, 138);
+  padding-bottom: 10px;
 }
 img {
   vertical-align: middle;
@@ -58,22 +59,24 @@ img {
 
 .current-temp {
   font-size: 50px;
-  color: rgb(107, 27, 117);
+  color: rgb(8, 54, 114);
   font-weight: 600;
   margin: auto;
 }
 .current-weather-type,
 .current-humidity,
 .current-wind {
-  color: rgb(143, 78, 151);
+  color: rgb(8, 54, 114);
   font-size: 18px;
 }
 .weather-app-data strong {
-  color: rgb(184, 88, 145);
+  color: rgb(23, 87, 170);
 }
 .weather-forecast {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .column {
   justify-content: center;
@@ -83,14 +86,16 @@ img {
 
 .weather-forecast-date {
   font-size: 20px;
-  color: rgb(127, 36, 139);
+  color: rgb(8, 54, 114);
   font-weight: bolder;
+  text-align: center;
 }
 
 .weather-forecast-temperature {
   font-size: larger;
   font-weight: bolder;
-  color: rgb(127, 36, 139);
+  color: rgb(8, 54, 114);
+  text-align: center;
 }
 
 .weather-forecast-temperature-min {
@@ -98,13 +103,13 @@ img {
 }
 
 footer {
-  border-top: 1px solid rgb(206, 148, 183);
+  border-top: 1px solid rgb(55, 122, 209);
   padding-top: 10px;
   text-align: center;
   font-size: 11px;
-  color: rgb(138, 61, 107);
+  color: rgb(21, 77, 150);
   font-weight: 500;
 }
 a {
-  color: rgb(184, 88, 145);
+  color: rgb(8, 54, 114);
 }
