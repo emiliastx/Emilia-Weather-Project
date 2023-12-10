@@ -79,8 +79,8 @@ img {
   display: flex;
   border-top: 1px solid rgb(55, 122, 209);
   justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .column {
   justify-content: center;
@@ -89,14 +89,14 @@ img {
 }
 
 .weather-forecast-date {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(8, 54, 114);
   font-weight: bolder;
   text-align: center;
 }
 
 .weather-forecast-temperature {
-  font-size: larger;
+  font-size: 16px;
 
   color: rgb(8, 54, 114);
   text-align: center;
